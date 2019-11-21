@@ -1,8 +1,11 @@
 pipeline {
-	agent any
-	stages {
-		stage("runningB") {
-			echo "running groovy file"
-		}
-	}
+   agent any
+
+   stages {
+      stage('Running B') {
+         steps {
+            echo 'Running groovy file'
+         }
+      }
+   }
 }

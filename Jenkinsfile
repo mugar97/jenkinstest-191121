@@ -1,8 +1,11 @@
 pipeline {
-	agent any
-	stages {
-		stage("runningA") {
-			echo "running Jenkinsfile"
-		}
-	}
+   agent any
+
+   stages {
+      stage('Running A') {
+         steps {
+            echo 'Running jenkins file'
+         }
+      }
+   }
 }
